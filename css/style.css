@@ -7,7 +7,7 @@
 
 body{
     background-color: rgb(238, 238, 238);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
     height: 100vh;
 }
@@ -16,7 +16,8 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    background-color:#440d3d;
+    /* background-color:#440d3d; */
+    background-color: rgb(61, 22, 40);
     color: white;
     height: 50%;
     gap: 1rem;
@@ -110,9 +111,56 @@ ul li a{
 .learning-overview{
     padding: 0 2rem;
 }
-#learning-overview-header{
+.learning-overview-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learning-overview-header p{
+    font-size: small;
+    font-weight: 200;
+}
+
+
+.learning-overview-card-wrapper{
+    width: 100%;
+    gap: 1rem;
+}
+
+.card{
+    width: 16rem;
+    height: 4.5rem;
+    background-color: rgba(245, 245, 245, 0.1);
+    border-radius: .3rem;
+
+    padding: 0.5rem .5rem;
+    gap: .7rem;
+}
+
+.card p{
+    font-size: 9px;
+    color: rgba(242, 239, 239, 0.397);
+    font-weight: 200;
+}
+
+.card h5{
+    font-size: 12px;
+    margin-bottom: .25rem;
+}
+
+.icon-wrapper{
+    background-color: rgba(245, 245, 245, 0.2);
+    border-radius: .2rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    width: 1.3rem;
+    height:1.3rem;
+}
+
+.icon-wrapper i{
+    font-size: 10px;
 }
