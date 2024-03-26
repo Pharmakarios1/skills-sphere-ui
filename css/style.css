@@ -1073,3 +1073,28 @@ border-radius: 50%;
 
 }
 
+/* large-pc-desktop @980px */
+@media (min-width: 981px){
+              
+      
+       header{
+        min-height: 270px;
+       } 
+
+       .learning-overview-card-wrapper{
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+    }
+
+      main{
+        min-height: 600px;
+      }
+        
+       
+        
+
+}
+
+
+
