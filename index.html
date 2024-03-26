@@ -4,8 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/eaab1623f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    hello
+    <header>
+    <nav>
+        <div class="logo flex align-end">
+            <img src="./img/logoskillsphere.png" alt="">
+            <h4>Skillsphere</h4>
+        </div>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Assignment</a></li>
+            <li><a href="#">Classmate</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+        <div class="flex gap align-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile-img">
+                <img src="./img/profilpic.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="profile-content-wrapper">
+        <img src="./img/profilpic.png" alt="">
+        <div class="profile-content flex flex-col">
+            <p>Welcome back!</p>
+            <h5>Gwen Anderson</h5>
+        </div>
+    </div>
+
+    <div class="learning-overview flex flex-col gap">
+        <div class="learning-overview-header ">
+            <p>Learning Overview</p>
+            <div class="flex gap">
+                <p>Overall</p>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="learning-overview-card-wrapper flex">
+            <div class="card flex flex-col">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="content-wrapper">
+                    <h5>22hr 12min</h5>
+                    <p>Total learning hours</p>
+                </div>
+            </div>
+            <div class="card flex flex-col">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="content-wrapper">
+                    <h5>12 Courses</h5>
+                    <p>Number of enrolled courses</p>
+                </div>
+            </div>
+            <div class="card flex flex-col">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="content-wrapper">
+                    <h5>8 Courses</h5>
+                    <p>Number of completed courses</p>
+                </div>
+            </div>
+            <div class="card flex flex-col">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="content-wrapper">
+                    <h5>12 Certificates</h5>
+                    <p>Number of gained certificates</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    </header>
+    <main class="main-content">
+        <div class="search-pane-wrapper flex flex-col gap">
+            <img src="./img/search-logo.png" alt="">
+            <h4>Smart learning hub</h4>
+            <p>Our AI assistant would generate personalized recommendations for courses, modules, or resources based on your learning style, completed courses, quiz results</p>
+            <div class="search-button flex">
+                <input type="search" name="search" id="search" placeholder="Enter topic that you want to learn">
+                <button class="flex"> <i class="fa-regular fa-paper-plane"></i><p>Try our AI</p></button>
+            </div>
+        </div>
+        <div class="search-suggestion-profile-wrapper flex">
+            <div class="search-suggestion-wrapper flex flex-col"> 
+                <div class="search-suggestion-header flex gap">
+                    <img src="./img/search-logo.png" alt="">
+                    <H3>Suggested by our AI</H3>
+                </div>
+                <div class="search-suggestion-content flex flex-col">
+                    <div class="profile-wrapper flex gap align-center">
+                        <img src="./img/profilpic.png" alt="">
+                        <p>Joshua Martin</p>
+                    </div>
+                    <div class="suggestion-text flex flex-col">
+                        <h4 class="suggestion-text-header">
+                            Cybersecurity 101: Protecting Your Digital World
+                        </h4>
+                        <p>Comprehensive e-course designed for beginners who seek to understand and implement 
+                            essential cybersecurity practices. In an era dominated by digital connectivity, the need
+                            for robust cybersecurity measures has never been more critical.
+                        </p>
+                        <div class=" reviews flex justify-between">
+                            <div class="flex gap">
+                                <div class="flex stars-wrapper">
+                                    <div class="flex stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p>4.7%</p>
+                                    
+                                </div>
+                                <p>(485 reviews)</p>
+                            </div>
+                            <p>24 lessons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-suggestion-content flex flex-col">
+                    <div class="profile-wrapper flex gap align-center">
+                        <img src="./img/profilpic.png" alt="">
+                        <p>Nicolas Wilson</p>
+                    </div>
+                    
+                </div>
+
+
+
+
+            </div>
+            <div class="profile-progress-wrapper flex flex-col gap">
+                <div class="profile-badge-wrapper flex flex-col gap">
+                    <img src="./img/profilpic.png" alt="">
+                    <div class="profile-badge-content flex flex-col ">
+                        <h4>Gwen Anderson</h4>
+                        <p>Andersongwen@gmail.com</p>
+                    </div>
+                    <div class="badge flex gap">
+                        <img src="./img/badge.png" alt="">
+                        <p>3rd</p>
+                    </div>
+                    <div class=" time-spend flex justify-between">
+                        <p>Today's time spend</p>
+                        <p>4h 52m</p>
+                    </div>
+                </div>
+                <div class="profile-badge-wrapper progress-bar flex flex-col gap">
+                    <h4>Daily Progress</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
