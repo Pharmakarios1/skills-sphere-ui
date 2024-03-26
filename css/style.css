@@ -28,16 +28,21 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3rem;
+    padding: .6rem 3rem;
     flex-wrap: wrap;
     gap: 1rem;
     border-bottom: 1px solid #676363;
 
 }
 
+.logo h4{
+    align-items: center;
+}
 .logo img{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    padding-right: .3rem;
+    cursor: pointer;
 }
 
 ul{
