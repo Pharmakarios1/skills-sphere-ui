@@ -34,6 +34,10 @@ nav{
     border-bottom: 1px solid #676363;
 
 }
+.logo{
+    text-decoration: none;
+    color: white;
+}
 
 .logo h4{
     align-items: center;
@@ -71,7 +75,9 @@ ul li a::after{
     content: "";
     display: block;
     width: 0;
-    height: 2px;
+    height: 2.5px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     background-color: orangered;
     position: absolute;
     margin-top: 13px;
@@ -84,12 +90,16 @@ ul li a:hover::after{
 }
 
 
-ul li a:active:after{
-    background-color: greenyellow;
+
+ul li a:focus:after{
+    background-color: orangered;
     width: 100%;
 }
 
-
+ul li a:active::after{
+    background-color: greenyellow;
+    width: 100%;
+}
 
 
 
