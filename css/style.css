@@ -103,7 +103,7 @@ ul li a:active::after{
 .profile-img img{
     width: 25px;
     height: 25px;
-    border-top: 1px solid grey;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
 }
 
@@ -119,7 +119,7 @@ ul li a:active::after{
     
     width: 35px;
     height: 35px;
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
 }
 
@@ -299,6 +299,7 @@ main{
 .profile-wrapper img{
     width: 15px;
     height: 15px;
+    border: 1px solid white;
     border-radius: 50%;
 }
 .profile-wrapper p{
@@ -421,14 +422,16 @@ border-radius: 50%;
 @media (max-width: 540px){
     body{
         width: 100%;
-        min-height: 240vh;
+        min-height: 280vh;
     }
     
     header{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     background-color: rgb(61, 22, 40);
     color: white;
+    height: 200px;
     min-height: 400px;
     gap: 1rem;
 
@@ -524,7 +527,7 @@ border-radius: 50%;
 
         .search-pane-wrapper{
             width: 100%;
-            height: 190px;
+            min-height: 190px;
             align-items: center;
             border: 1px solid rgb(201, 199, 199);
             box-shadow: 1px 1px 2px rgb(180, 178, 178);
@@ -583,12 +586,12 @@ border-radius: 50%;
         /* SEARCH SUGGESTION */
         .search-suggestion-profile-wrapper{
             flex-direction: column;
-            gap: 5rem;
+            gap: 3rem;
         }
         
         .search-suggestion-wrapper{
             width: 100%;
-            min-height: 68vh;
+            min-height: 90vh;
             border: 1px solid rgb(194, 192, 192);
             background-color: whitesmoke;
             border-radius: 0.4rem;
@@ -608,7 +611,19 @@ border-radius: 50%;
             border: 1px solid rgb(207, 203, 203);
             background-color: whitesmoke;
         }
+        .time-spend{
+            margin-top: 2.3rem;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 .5rem;
+            justify-content: space-between;
         
+            background-color: rgba(255, 0, 0, 0.209);
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
         .profile-badge-wrapper img{
         height: 40px;
         width: 40px;
@@ -649,6 +664,7 @@ border-radius: 50%;
     flex-direction: column;
     background-color: rgb(61, 22, 40);
     color: white;
+    height: 420px;
     min-height: 400px;
     gap: 1rem;
 
@@ -804,7 +820,7 @@ border-radius: 50%;
         /* SEARCH SUGGESTION */
         .search-suggestion-profile-wrapper{
             flex-direction: column;
-            gap: 5rem;
+            gap: 3rem;
         }
         
         .search-suggestion-wrapper{
@@ -817,24 +833,16 @@ border-radius: 50%;
         
         .profile-progress-wrapper{
             width: 100%;
-            height: 40vh;
+            height: 50vh;
             flex-direction: row;
         }
         
-        .profile-badge-wrapper{
-            width: 100%;
-            min-height: 50vh;
-            border-radius: .5rem;
-            align-items: center;
-            padding-top: .7rem;
-            border: 1px solid rgb(207, 203, 203);
-            background-color: whitesmoke;
-        }
+     
         
         .profile-badge-wrapper img{
         height: 40px;
         width: 40px;
-        
+        border: px solid white;
         }
         
         .profile-badge-content{
